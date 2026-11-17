@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Max Family Foundation, Inc. | Financial Literacy, Entrepreneurship &amp; Leadership Education in Miami</title>
+<meta name="description" content="Max Family Foundation, Inc. is a Miami nonprofit that teaches youth, students and aspiring entrepreneurs financial literacy, entrepreneurship, social entrepreneurship, civic duty and leadership.">
+<meta property="og:title" content="Max Family Foundation, Inc.">
+<meta property="og:description" content="Classes, workshops and mentoring in financial literacy, entrepreneurship, civic duty and leadership — Miami, Florida.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231F3864'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' fill='white' text-anchor='middle'%3EMF%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --navy:#1F3864; --navy-deep:#14264a; --violet:#6A4C93; --violet-soft:#efe9f6;
+    --ink:#1d2433; --grey:#5b6474; --line:#dfe3ea; --paper:#ffffff; --mist:#f5f7fa;
+    --radius:14px; --max:1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Arial,"Helvetica Neue",Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px}
+  a{color:var(--navy)}
+  img{max-width:100%}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+  em.hl{font-style:italic;color:var(--violet)}
+  .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:13px;font-weight:700;color:var(--violet);margin-bottom:12px}
+  h1,h2,h3{color:var(--navy);line-height:1.15}
+  h2{font-size:clamp(28px,3.4vw,40px);margin-bottom:16px}
+  h3{font-size:20px;margin-bottom:8px}
+  section{padding:96px 0}
+  .lead{font-size:19px;color:var(--grey);max-width:760px}
+  .btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;font-size:16px;transition:.2s;border:2px solid transparent;cursor:pointer}
+  .btn-primary{background:var(--violet);color:#fff}
+  .btn-primary:hover{background:#563c7a}
+  .btn-ghost{border-color:rgba(255,255,255,.55);color:#fff}
+  .btn-ghost:hover{background:rgba(255,255,255,.1)}
+  .btn-navy{background:var(--navy);color:#fff}
+  .btn-navy:hover{background:var(--navy-deep)}
+
+  /* header */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .mark{width:42px;height:42px;border-radius:11px;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:700;font-size:17px;letter-spacing:.02em}
+  .brand-text strong{display:block;color:var(--navy);font-size:17px}
+  .brand-text span{display:block;color:var(--grey);font-size:12px}
+  nav ul{list-style:none;display:flex;gap:28px;align-items:center}
+  nav a{text-decoration:none;color:var(--ink);font-size:15px;font-weight:600}
+  nav a:hover{color:var(--violet)}
+  .menu-btn{display:none;background:none;border:0;font-size:26px;color:var(--navy);cursor:pointer}
+
+  /* hero */
+  .hero{background:linear-gradient(135deg,var(--navy-deep) 0%,var(--navy) 55%,#3b2f6b 100%);color:#fff;padding:110px 0 0;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;right:-160px;top:-160px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(106,76,147,.45),transparent 70%)}
+  .hero h1{color:#fff;font-size:clamp(38px,5.4vw,64px);max-width:860px;margin-bottom:22px;position:relative;z-index:1}
+  .hero h1 em{color:#c9b6e6}
+  .hero p{font-size:20px;color:#d7deeb;max-width:700px;margin-bottom:34px;position:relative;z-index:1}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;position:relative;z-index:1}
+  .facts{margin-top:80px;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.18);position:relative;z-index:1}
+  .fact{padding:28px 20px 34px;border-right:1px solid rgba(255,255,255,.18)}
+  .fact:last-child{border-right:0}
+  .fact b{display:block;font-size:24px;color:#fff;margin-bottom:4px}
+  .fact span{font-size:14px;color:#c3cbdb}
+
+  /* why */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:.2s}
+  .card:hover{border-color:var(--violet);box-shadow:0 10px 30px rgba(31,56,100,.08)}
+  .card .icon{width:46px;height:46px;border-radius:12px;background:var(--violet-soft);color:var(--violet);display:grid;place-items:center;font-weight:700;margin-bottom:16px}
+  .card p{color:var(--grey);font-size:16px}
+
+  /* programs */
+  .alt{background:var(--mist)}
+  .programs{display:grid;gap:18px;margin-top:44px}
+  .program{display:grid;grid-template-columns:90px 1fr 220px;gap:24px;align-items:start;background:#fff;border-radius:var(--radius);padding:30px;border-left:5px solid var(--navy)}
+  .program:nth-child(even){border-left-color:var(--violet)}
+  .num{font-size:40px;font-weight:700;color:var(--line);line-height:1}
+  .program p{color:var(--grey);font-size:16px}
+  .format{font-size:14px;color:var(--navy);font-weight:700;background:var(--violet-soft);border-radius:10px;padding:12px 14px}
+
+  /* approach */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .steps{list-style:none;counter-reset:s}
+  .steps li{counter-increment:s;padding:16px 0 16px 58px;position:relative;border-bottom:1px solid var(--line)}
+  .steps li::before{content:counter(s);position:absolute;left:0;top:14px;width:38px;height:38px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:700}
+  .steps li b{color:var(--navy)}
+  .panel{background:var(--navy);color:#fff;border-radius:var(--radius);padding:40px}
+  .panel h3{color:#fff;font-size:24px}
+  .panel p{color:#d7deeb;margin-bottom:12px}
+  .panel ul{margin:16px 0 0 20px;color:#d7deeb}
+  .panel li{margin-bottom:8px}
+
+  /* board */
+  .board{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+  .person{text-align:center;padding:34px 24px;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
+  .avatar{width:96px;height:96px;border-radius:50%;margin:0 auto 18px;background:linear-gradient(135deg,var(--navy),var(--violet));color:#fff;display:grid;place-items:center;font-size:30px;font-weight:700}
+  .person h3{margin-bottom:4px}
+  .person span{color:var(--violet);font-weight:700;font-size:14px}
+
+  /* involve */
+  .involve{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+  .involve .card{display:flex;flex-direction:column}
+  .involve .card .btn{margin-top:auto;align-self:flex-start}
+  .involve .card p{margin-bottom:22px}
+  .disclosure{margin-top:36px;font-size:13px;color:var(--grey);border:1px solid var(--line);border-radius:10px;padding:18px 20px;background:#fff;text-transform:none}
+  .disclosure b{color:var(--ink)}
+
+  /* contact */
+  .contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;margin-top:40px}
+  form{display:grid;gap:14px}
+  label{font-size:14px;font-weight:700;color:var(--navy)}
+  input,select,textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:16px;background:#fff}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--violet);border-color:transparent}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .info{background:var(--mist);border-radius:var(--radius);padding:32px}
+  .info h3{margin-bottom:16px}
+  .info p{margin-bottom:14px;color:var(--grey)}
+  .info strong{color:var(--ink);display:block;font-size:14px}
+
+  /* policies */
+  .policies{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:36px}
+  details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 22px}
+  summary{cursor:pointer;font-weight:700;color:var(--navy)}
+  details p{margin-top:12px;color:var(--grey);font-size:15px}
+
+  /* footer */
+  footer{background:var(--navy-deep);color:#c3cbdb;padding:70px 0 30px;font-size:15px}
+  .foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:40px}
+  footer h4{color:#fff;margin-bottom:14px;font-size:15px;text-transform:uppercase;letter-spacing:.1em}
+  footer a{color:#c3cbdb;text-decoration:none}
+  footer a:hover{color:#fff}
+  footer ul{list-style:none}
+  footer li{margin-bottom:8px}
+  .legal{border-top:1px solid rgba(255,255,255,.14);padding-top:24px;font-size:12.5px;line-height:1.7}
+  .legal p{margin-bottom:10px}
+
+  @media (max-width:960px){
+    nav ul{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;flex-direction:column;padding:20px;gap:16px;border-bottom:1px solid var(--line)}
+    nav ul.open{display:flex}
+    .menu-btn{display:block}
+    .facts{grid-template-columns:repeat(2,1fr)}
+    .fact:nth-child(2){border-right:0}
+    .cards,.board,.involve,.policies{grid-template-columns:1fr}
+    .program{grid-template-columns:1fr}
+    .split,.contact-grid,.foot{grid-template-columns:1fr}
+    section{padding:70px 0}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Max Family Foundation home">
+      <div class="mark">MF</div>
+      <div class="brand-text"><strong>Max Family Foundation</strong><span>Educating the next generation of builders</span></div>
+    </a>
+    <nav>
+      <button class="menu-btn" aria-label="Open menu" onclick="document.getElementById('menu').classList.toggle('open')">&#9776;</button>
+      <ul id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#board">Board</a></li>
+        <li><a href="#involved">Get Involved</a></li>
+        <li><a class="btn btn-navy" style="color:#fff;padding:10px 20px" href="#contact">Enroll</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow" style="color:#c9b6e6">A Miami nonprofit education foundation</div>
+      <h1>Where the next generation learns to <em>build real</em> financial power.</h1>
+      <p>Classes, workshops and mentoring that teach youth, students and aspiring entrepreneurs financial literacy, entrepreneurship, social entrepreneurship, civic duty and leadership.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#contact">Enroll in a Program &rarr;</a>
+        <a class="btn btn-ghost" href="#programs">Explore Programs &rarr;</a>
+      </div>
+      <div class="facts">
+        <div class="fact"><b>5</b><span>Program areas</span></div>
+        <div class="fact"><b>Dec. 1, 2026</b><span>First programs begin</span></div>
+        <div class="fact"><b>English &amp; Spanish</b><span>In person in Miami and online</span></div>
+        <div class="fact"><b>Fee waivers</b><span>No one turned away for inability to pay</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / WHY -->
+  <section id="about">
+    <div class="wrap">
+      <div class="eyebrow">Why we exist</div>
+      <h2>Knowledge that <em class="hl">changes outcomes</em>.</h2>
+      <p class="lead">Too many young people and first-generation entrepreneurs in South Florida reach adulthood, or open a business, without ever being taught how money, credit, taxes and business planning really work. Max Family Foundation teaches it directly — practically, in two languages, and with fees kept modest and waived for those who cannot pay.</p>
+      <div class="cards">
+        <div class="card"><div class="icon">01</div><h3>Practical, not theoretical</h3><p>Every course ends with something participants can use: a personal budget, a credit plan, a business plan, a community project.</p></div>
+        <div class="card"><div class="icon">02</div><h3>Taught by practitioners</h3><p>Instructors and mentors are professionals who have built businesses and advised owners, serving as volunteers alongside screened guest speakers.</p></div>
+        <div class="card"><div class="icon">03</div><h3>Open to everyone</h3><p>Programs are open to the public without regard to race, color, religion, sex, national origin, age or disability, with confidential fee waivers.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section id="programs" class="alt">
+    <div class="wrap">
+      <div class="eyebrow">Programs</div>
+      <h2>Five areas. <em class="hl">One foundation</em> for life and business.</h2>
+      <p class="lead">Classes, workshops, seminars and mentoring for middle-school, high-school and college students, young adults, and aspiring and early-stage entrepreneurs in Miami-Dade, Broward and Palm Beach counties.</p>
+      <div class="programs">
+        <div class="program"><div class="num">01</div><div><h3>Financial Literacy</h3><p>Budgeting, saving, credit and credit scores, banking, taxes, and how to avoid predatory lending.</p></div><div class="format">Classes &amp; workshops</div></div>
+        <div class="program"><div class="num">02</div><div><h3>Entrepreneurship</h3><p>Testing an idea, business planning, reading financial statements, managing cash flow, accessing capital, and staying legally and tax compliant.</p></div><div class="format">Multi-session courses &amp; mentoring</div></div>
+        <div class="program"><div class="num">03</div><div><h3>Social Entrepreneurship</h3><p>Designing ventures that address community needs, measuring social impact, and understanding nonprofit and hybrid models.</p></div><div class="format">Workshops &amp; project teams</div></div>
+        <div class="program"><div class="num">04</div><div><h3>Civic Duty</h3><p>How government works, taxes and public finance, nonpartisan civic participation, and community service.</p></div><div class="format">Seminars</div></div>
+        <div class="program"><div class="num">05</div><div><h3>Leadership</h3><p>Communication, ethics, decision-making, teamwork and public speaking.</p></div><div class="format">Workshops &amp; mentoring</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section id="approach">
+    <div class="wrap split">
+      <div>
+        <div class="eyebrow">Our approach</div>
+        <h2>We measure <em class="hl">what participants can do</em>, not just who attended.</h2>
+        <ul class="steps">
+          <li><b>Assess.</b> A short knowledge assessment before each course.</li>
+          <li><b>Teach and practice.</b> Hands-on sessions built around real decisions.</li>
+          <li><b>Apply.</b> Participants complete a budget, plan or project.</li>
+          <li><b>Measure.</b> A post-course assessment and satisfaction survey.</li>
+          <li><b>Follow up.</b> A six-month check-in on budgets kept, credit improved and businesses formed.</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Scholarships</h3>
+        <p>The Foundation plans to award scholarships to students pursuing business, accounting, finance or entrepreneurship at accredited colleges and universities.</p>
+        <p>Scholarship procedures are being submitted to the Internal Revenue Service for advance approval. Applications will open once approval is received — and will be announced here.</p>
+        <ul>
+          <li>Objective, nondiscriminatory selection</li>
+          <li>Independent selection committee</li>
+          <li>Paid directly to the educational institution</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOARD -->
+  <section id="board" class="alt">
+    <div class="wrap">
+      <div class="eyebrow">Governance</div>
+      <h2>Board of <em class="hl">Directors</em></h2>
+      <p class="lead">Directors serve without compensation. The Foundation has adopted conflict of interest, whistleblower, financial control, youth protection, nondiscrimination and privacy policies.</p>
+      <div class="board">
+        <div class="person"><div class="avatar">DH</div><h3>David Hernandez</h3><span>President and Director</span></div>
+        <div class="person"><div class="avatar">AH</div><h3>Adriana Hernandez</h3><span>Vice President, Treasurer and Director</span></div>
+        <div class="person"><div class="avatar">AH</div><h3>Annabelle D. Hernandez</h3><span>Secretary and Director</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GET INVOLVED -->
+  <section id="involved">
+    <div class="wrap">
+      <div class="eyebrow">Get involved</div>
+      <h2>Help us <em class="hl">teach the next builder</em>.</h2>
+      <div class="involve">
+        <div class="card"><div class="icon">&#9733;</div><h3>Enroll</h3><p>Join a class, workshop or mentoring program. Ask about reduced fees and waivers — requests are confidential.</p><a class="btn btn-navy" href="#contact" onclick="pick('Enrollment')">Enroll &rarr;</a></div>
+        <div class="card"><div class="icon">&#10010;</div><h3>Teach or mentor</h3><p>Share your experience as a volunteer instructor, mentor or guest speaker. Background screening applies for work with minors.</p><a class="btn btn-navy" href="#contact" onclick="pick('Volunteer / instructor')">Volunteer &rarr;</a></div>
+        <div class="card"><div class="icon">&#9829;</div><h3>Give</h3><p>Contributions fund course materials, classroom space, technology, fee waivers and future scholarships.</p><a class="btn btn-primary" href="#contact" onclick="pick('Donation')">Donate &rarr;</a></div>
+      </div>
+      <p class="disclosure"><b>Tax status.</b> Max Family Foundation, Inc. is a Florida not for profit corporation (EIN 42-2734063). Its application for recognition of exemption under Section 501(c)(3) of the Internal Revenue Code is pending; if recognized, the exemption applies from the date of formation. Please consult your tax adviser regarding deductibility.<br><br>
+      <b>A COPY OF THE OFFICIAL REGISTRATION AND FINANCIAL INFORMATION MAY BE OBTAINED FROM THE DIVISION OF CONSUMER SERVICES BY CALLING TOLL-FREE (800-435-7352) WITHIN THE STATE OR VISITING www.FloridaConsumerHelp.com. REGISTRATION DOES NOT IMPLY ENDORSEMENT, APPROVAL, OR RECOMMENDATION BY THE STATE. Florida Registration No. CH__________.</b></p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="alt">
+    <div class="wrap">
+      <div class="eyebrow">Contact</div>
+      <h2>Let's <em class="hl">talk</em>.</h2>
+      <p class="lead">Tell us whether you want to enroll, volunteer or give, and we will reply within two business days.</p>
+      <div class="contact-grid">
+        <form id="contactForm" onsubmit="return sendForm(event)">
+          <div class="row2">
+            <div><label for="name">Name</label><input id="name" required autocomplete="name"></div>
+            <div><label for="email">Email</label><input id="email" type="email" required autocomplete="email"></div>
+          </div>
+          <div class="row2">
+            <div><label for="phone">Phone</label><input id="phone" type="tel" autocomplete="tel"></div>
+            <div><label for="topic">I'm interested in</label>
+              <select id="topic"><option>Enrollment</option><option>Fee waiver</option><option>Volunteer / instructor</option><option>Donation</option><option>Scholarships</option><option>Other</option></select></div>
+          </div>
+          <div><label for="msg">Message</label><textarea id="msg" rows="5"></textarea></div>
+          <p style="font-size:13px;color:var(--grey)">We use your information only to respond to you. We never sell it or share it with any business for marketing.</p>
+          <button class="btn btn-primary" type="submit" style="justify-self:start">Send Message &rarr;</button>
+        </form>
+        <div class="info">
+          <h3>Max Family Foundation, Inc.</h3>
+          <p><strong>Office</strong>J.P. Morgan Chase Building<br>150 SE 2nd Avenue, Suite 205<br>Miami, Florida 33131</p>
+          <p><strong>Phone</strong><a href="tel:+13057078007">(305) 707-8007</a></p>
+          <p><strong>Email</strong><a id="mailLink" href="#"></a></p>
+          <p><strong>Programs begin</strong>December 1, 2026</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POLICIES -->
+  <section id="policies">
+    <div class="wrap">
+      <div class="eyebrow">Transparency</div>
+      <h2>Policies and <em class="hl">public information</em></h2>
+      <div class="policies">
+        <details><summary>Nondiscrimination</summary><p>Max Family Foundation, Inc. admits participants of any race, color, religion, sex, national origin, age or disability to all the rights, privileges, programs and activities generally made available to participants, and does not discriminate on those bases in its educational programs, scholarships, fee waivers or other programs.</p></details>
+        <details><summary>Privacy</summary><p>We collect only the information needed to run our programs and meet legal obligations. We do not sell, rent or exchange personal information and do not share it with any business for marketing. Information about participants under 18 is collected only with a parent's or guardian's consent.</p></details>
+        <details><summary>Youth protection</summary><p>Everyone who works with participants under 18 completes a fingerprint-based background check and youth-protection training, and no adult is ever alone with a minor participant. Suspected child abuse, abandonment or neglect must be reported to the Florida Abuse Hotline at 1-800-96-ABUSE.</p></details>
+        <details><summary>Public disclosure</summary><p>Our application for recognition of exemption and our three most recent annual returns (Form 990-PF) are available for public inspection at our office and on request, as required by Section 6104(d) of the Internal Revenue Code.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="brand" style="margin-bottom:16px"><div class="mark" style="background:var(--violet)">MF</div><div class="brand-text"><strong style="color:#fff">Max Family Foundation, Inc.</strong><span style="color:#c3cbdb">Florida not for profit corporation</span></div></div>
+        <p>Teaching youth, students and aspiring entrepreneurs financial literacy, entrepreneurship, social entrepreneurship, civic duty and leadership.</p>
+      </div>
+      <div><h4>Explore</h4><ul><li><a href="#about">About</a></li><li><a href="#programs">Programs</a></li><li><a href="#approach">Approach &amp; Scholarships</a></li><li><a href="#board">Board</a></li><li><a href="#involved">Get Involved</a></li><li><a href="#policies">Policies</a></li></ul></div>
+      <div><h4>Visit</h4><ul><li>150 SE 2nd Avenue, Suite 205</li><li>Miami, Florida 33131</li><li><a href="tel:+13057078007">(305) 707-8007</a></li><li><a id="mailFoot" href="#"></a></li></ul></div>
+    </div>
+    <div class="legal">
+      <p>&copy; <span id="yr"></span> Max Family Foundation, Inc. · Florida Document No. N26000007146 · EIN 42-2734063. Application for recognition of exemption under Section 501(c)(3) pending.</p>
+      <p>A COPY OF THE OFFICIAL REGISTRATION AND FINANCIAL INFORMATION MAY BE OBTAINED FROM THE DIVISION OF CONSUMER SERVICES BY CALLING TOLL-FREE (800-435-7352) WITHIN THE STATE OR VISITING www.FloridaConsumerHelp.com. REGISTRATION DOES NOT IMPLY ENDORSEMENT, APPROVAL, OR RECOMMENDATION BY THE STATE. Florida Registration No. CH__________.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ==== SET THE FOUNDATION'S EMAIL HERE BEFORE DEPLOYING ====
+  const FOUNDATION_EMAIL = "info@maxfamilyfoundation.org";
+
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  ['mailLink','mailFoot'].forEach(id => { const a = document.getElementById(id); a.href = 'mailto:' + FOUNDATION_EMAIL; a.textContent = FOUNDATION_EMAIL; });
+  function pick(v){ document.getElementById('topic').value = v; }
+  function sendForm(e){
+    e.preventDefault();
+    const v = id => document.getElementById(id).value.trim();
+    const subject = `Website inquiry: ${v('topic')} — ${v('name')}`;
+    const body = `Name: ${v('name')}\nEmail: ${v('email')}\nPhone: ${v('phone')}\nInterest: ${v('topic')}\n\n${v('msg')}`;
+    window.location.href = `mailto:${FOUNDATION_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    return false;
+  }
+  document.querySelectorAll('#menu a').forEach(a => a.addEventListener('click', () => document.getElementById('menu').classList.remove('open')));
+</script>
+</body>
+</html>
